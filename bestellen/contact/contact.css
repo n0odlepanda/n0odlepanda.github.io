@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #fef8e0;
+  color: #4b2e0e;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #8b4513;
+  padding: 0 30px;
+}
+
+.nav-logo {
+  max-height: 55px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding-left: 0;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background-color: #69320b;
+  color: #fff8f0;
+}
+
+.container {
+  flex: 1;
+  max-width: 600px;
+  margin: 60px auto 40px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 1.3rem;
+  margin-bottom: 35px;
+  color: #7a5530;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.contact-form label {
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #5a3b0c;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 12px 15px;
+  border: 2px solid #8b4513;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  resize: vertical;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: #69320b;
+  outline: none;
+}
+
+.button {
+  background-color: #8b4513;
+  color: #fff;
+  border: none;
+  padding: 15px 40px;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  width: fit-content;
+}
+
+.button:hover {
+  background-color: #69320b;
+}
+
+footer {
+  background-color: #8b4513;
+  color: #b87c37;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: auto;
+}

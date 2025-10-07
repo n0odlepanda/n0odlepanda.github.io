@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Webshop - Bache's Brownies</title>
+    <link rel="stylesheet" href="bestellen.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img
+        src="images/generated-image-removebg-preview.png"
+        alt="Bache's Brownies logo"
+        class="nav-logo"
+      />
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="webshop.html" class="active">Bestellen</a></li>
+        <li><a href="./contact/contact.html">Contact</a></li>
+        <li><a href="../about/about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <label class="switch">
+        <input
+          type="checkbox"
+          id="secretModeToggle"
+          onchange="toggleSecretMode()"
+        />
+        <span class="slider"></span>
+      </label>
+      <span>Secret Mode</span>
+      <h1>Onze Brownies</h1>
+      <p class="tagline">Kies jouw favoriete smaken en bestel ze eenvoudig!</p>
+
+      <div class="products">
+        <!-- Product 1 -->
+        <div class="product">
+          <img src="images/asset-1246754.jpg" alt="Classic Brownie" />
+          <h3>Classic Brownie</h3>
+          <p>€3,50 per stuk</p>
+          <a
+            href="bestellen.html?product=Classic%20Brownie"
+            class="button"
+            role="button"
+            aria-label="Bestel Classic Brownie"
+            >Bestel</a
+          >
+        </div>
+        <!-- Product 2 -->
+        <div class="product">
+          <img
+            src="images/classic-fudge-walnut-brownies-x-fdb8148084484e9f97694ddaabd82879.jpg"
+            alt="Walnut Brownie"
+          />
+          <h3>Walnut Brownie</h3>
+          <p>€4,00 per stuk</p>
+          <a
+            href="bestellen.html?product=Walnut%20Brownie"
+            class="button"
+            role="button"
+            aria-label="Bestel Walnut Brownie"
+            >Bestel</a
+          >
+        </div>
+        <!-- Product 3 -->
+        <div class="product">
+          <img
+            src="images/taste_image001_RGB_1080x1080.jpg"
+            alt="Peanut Brownie"
+          />
+          <h3>Peanut Brownie</h3>
+          <p>€4,50 per stuk</p>
+          <a
+            href="bestellen.html?product=Peanut%20Brownie"
+            class="button"
+            role="button"
+            aria-label="Bestel Peanut Brownie"
+            >Bestel</a
+          >
+        </div>
+        <!-- Product 4 -->
+        <div class="product">
+          <img
+            src="images/lee-lees-double-chocolate-chunk-brownies-FT-RECIPE0319_0-9c037470a180443abad63ef21565af98.jpg"
+            alt="Double Chocolate Brownie"
+          />
+          <h3>Double Chocolate Brownie</h3>
+          <p>€4,75 per stuk</p>
+          <a
+            href="bestellen.html?product=Double%20Chocolate%20Brownie"
+            class="button"
+            role="button"
+            aria-label="Bestel Double Chocolate Brownie"
+            >Bestel</a
+          >
+        </div>
+      </div>
+      <div class="phone-number">
+        Bel mij: +32 496 22 02 50<br />
+        <em>if you know you know</em>
+      </div>
+    </main>
+
+    <footer>&copy; 2025 Bache's Brownies. Alle rechten voorbehouden.</footer>
+  </body>
+</html>
+<script>
+  function toggleSecretMode() {
+    const secretActivated = document.getElementById("secretModeToggle").checked;
+    if (secretActivated) {
+      document.body.classList.add("secret-mode");
+      document.body.style.backgroundImage = "url('image.jpg')";
+      document.body.style.backgroundSize = "cover";
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundPosition = "center center";
+    } else {
+      document.body.classList.remove("secret-mode");
+      document.body.style.background = "#fef8e0";
+      document.body.style.backgroundImage = "none";
+    }
+  }
+</script>
+
